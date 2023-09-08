@@ -1,5 +1,5 @@
 document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevenir el envío del formulario por defecto
+    e.preventDefault(); 
 
     const requiredFields = document.querySelectorAll('.form-control');
     let valid = true;
@@ -45,7 +45,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
             }
         }
 
-        // Verificar campo vacío
+       
         if (inputValue === '') {
             field.classList.add('error');
             valid = false;
@@ -53,13 +53,13 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     });
 
     if (valid) {
-        // Agregar la animación al botón ENVIAR
+        
         const submitButton = document.querySelector('.btn-submit');
-        submitButton.classList.add('animate__animated', 'animate__flip'); // Agregar clases de animación
+        submitButton.classList.add('animate__animated', 'animate__flip');
 
         setTimeout(function () {
-            // Remover las clases de animación después de la animación
+            
             submitButton.classList.remove('animate__animated', 'animate__flip');
-        }, 500); // Ajustar el tiempo según la duración de la animación
+        }, 500); 
     }
 });
