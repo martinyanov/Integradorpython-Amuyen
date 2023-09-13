@@ -307,8 +307,11 @@ input {
     .menu {
         grid-template-columns: repeat(3, 1fr);
         justify-content: start; 
+        
+
     }
 
+ 
     .menu li:nth-child(1),
     .menu li:nth-child(4) {
         margin-left: 20px; 
