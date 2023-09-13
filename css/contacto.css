@@ -315,6 +315,7 @@ input {
     .menu li:nth-child(1),
     .menu li:nth-child(4) {
         margin-left: 20px; 
+        margin-top: 0px;
     }
 
     .menu li:nth-child(3),
